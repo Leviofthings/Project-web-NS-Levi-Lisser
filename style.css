@@ -15,14 +15,14 @@ body{
       	color: red;
     }
 }
-
+/*HEADER*/
 header{
 	width: 100%;
 	
 	background-color:white;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content:flex-end;
 	align-items: center;
 	box-shadow: inset 0px -2px 0px 0px grey;
 	position: fixed;
@@ -74,7 +74,7 @@ header button:hover{
 	margin-left:3em;
 }
 form{
-	display: flex;
+
 	overflow: hidden;
 	transition: .5s
 }
@@ -94,8 +94,9 @@ h2{
 	padding-left: 1em;
 	font-size: 1em;
  }
+ /*HEADER AF*/
 
-/*button{
+section button{
 	transition: 0.3s;
     height: 2.8125rem;
     padding: .625rem 1.125rem;
@@ -111,48 +112,142 @@ h2{
   	margin-left: 1em;
 
 }
-button:hover{
+section button:hover{
 	box-shadow: inset 2px -50px 0px 0px rgba(0,92,161,1);
 }
-*/
+section aside{
+	
+	position: relative;
+	padding-top: 6em;
+	padding-left: 4em;
+	margin-left: 2em;
+	
+	max-width: 30em;
+	color: white;
+	text-shadow: 0px 2px 5px rgba(149, 150, 150, 1);
 
-nav{
-	padding-top: 2.5em;
-	width: 100%;
-	background-color: #FFB310;
-	display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
-nav ul{
-	text-decoration: none;
-	list-style: none;
-	display: inline-flex;
-	 list-style-type: none;
+aside h2{
+	color: white;
+	margin-left: 0;
+}
+aside p{
+	margin-left: 1em;
+}
+section form fieldset {
 
-    overflow: hidden;
+	color: black;
+	transition: 0.5s;
+	max-width: 22%;
+	max-height: 34em;
+	padding-left: 1em;
+	line-height: 2em;
+	margin: 1em;
+    display: inline-grid;
+    padding-right:3em;
+
 }
-nav li a {
-    display: block;
-    color: white;
+section form fieldset ul{
+
+list-style: none;
+    padding-left: 0;
+
+}
+
+
+form>fieldset>ul>li>input {
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+ 
+}
+
+input[type=checkbox]+label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0em;
+    font-size: 1em;
+    width: 7em;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label:before {
+    content: "\2714";
+    font-size: 1em;
+    line-height: 1em;
+    border: 0.05em solid gainsboro;
+    border-radius: 0.1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding: 0.1em;
+    margin-right: 0.2em;
     text-align: center;
-    padding-left: 1em;
+    color: transparent;
+    transition: .2s;
+}
+
+input[type=checkbox]+label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked+label:before {
+    color: #005184;
+}
+
+
+
+}
+
+body>div>form>fieldset>legend {
+    color: #6e7477;
     padding-top: 1em;
-    text-decoration: none;
 }
-li a:hover{
-	background-color: #E5B418;
+
+section form{
+    
+    background-color: #FFC917;
+    padding: 1em;
+    border: none;
+    color: #6d6f71;
+    margin: 1em;
+
 }
+
+
 section{
-	margin-top: 2em; 
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
 }
+section:first-of-type{
+	background: url(img/Verhaalbait-15-17-17.png);
+	background-size: cover;
+	padding:2em 0;
+	display: block;
+	max-height: 26em;
+}
+section img{
+	width: 100%;
+	object-fit: cover;
+	max-height: 24em;
+}
+
+
+main{
+    padding-left: 3em;
+
+	display:inline-flex;
+	flex-wrap: wrap;
+
+}
+
 article{
 	transition: 0.5s;
-	max-width: 22em;
+	max-width: 24em;
 	min-height: 24em;
 	position: relative;
 	background-color: white;
@@ -163,7 +258,6 @@ article{
 }
 article:hover{
 		box-shadow: 0px 5px 0px 0px grey;
-
 }
 
 
@@ -187,7 +281,9 @@ article img{
 	height: 10em;
 	object-fit: cover;
 }
-article section{
+footer{
+	background:none;
+	padding: 0;
 	width: 100%;
 	position: absolute;
 	display: inline-flex;
@@ -196,26 +292,29 @@ article section{
 	margin-top: 4em; 
 
 }
-article section img{
-	width: 2em;
-	max-height: 2em;
+article footer img{
+	width: 2.5em;
+	max-height: 2.5em;
+	  transition: 0.5s;
 }
-.login{
-	background-color: #FDC817;
-	width: 100%;
+article footer img:hover{
+	border-bottom: 5px solid blue;
+}
+form[action="index.html"]
+{	background-color: #FDC817;
+	max-width: 32em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
-.login form{
-	padding: 0.5rem 2rem 2rem 1.563rem;
+    padding: 0.5rem 2rem 2rem 1.563rem;
     margin-bottom: 1rem;
     color: #003082;
 }
+	
 fieldset{
 	border: none;
 }
-.login label{
+form h2{
 	display: inline-block;
 	width: 10rem;
 	float: left;
@@ -223,7 +322,7 @@ fieldset{
     text-align: left;
  
 }
-.login input{
+form input{
 	width: calc(100% - 10rem);
     padding: 1rem;
     border: none;
@@ -240,16 +339,62 @@ input:focus{
 	border: 1px solid #2474BA;
 		box-shadow: inset 0px -3px 0px 0px rgba(0,92,161,1);
 }
+/**MICROINTERATION 1*/
 div {
-  border: 2px solid gray;
-  padding: 2rem;
-  margin: 1rem;
+
   opacity: 0;
-  transition: 0.3s;
-  position: absolute;
+     width: 2em;
+    height: 2em;
+
 }
-div.yay {
-  opacity: 1;
-  background-color: white;
+.yay {
+animation-name: Like;
+    animation-duration: 1.2s;
+    opacity: 1;
   z-index: 10;
+    position: fixed;
+
+
+}
+.yay img{
+    width: 4em;
+    height: 4em;
+     object-fit: contain;
+}
+@keyframes Like {
+  0% {
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  10% {
+    transform:  scaleX(0.80) scaleY(0.80) translate(0px,-2px);
+  }
+  20% {
+    transform:  scaleX(0.80) scaleY(0.80) translate(0px,-4px);
+  }
+  30% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-6px);
+  }
+  40% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-8px);
+  }
+  50% {
+    transform:  scaleX(1.20) scaleY(1.20) translate(0px,-14px);
+  }
+  60% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-8px) ;
+  }
+  70% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-6px);
+  }
+  80% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-4px);
+  }
+  90% {
+    transform:   scaleX(1.20) scaleY(1.20) translate(0px,-2px);
+  }
+  100% {
+    transform:   scaleX(1.10) scaleY(1.10) translate(0px,0px);
+   
+
+  }
 }

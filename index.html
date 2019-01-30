@@ -10,51 +10,72 @@
 </head>
 <header>
 	
-	<a href="index.html"alt="log in"><img src="img/nederlandse-spoorwegen-ns-logo.png" alt="Home"></a>
+	<a href="index.html" alt="log in"><img src="img/nederlandse-spoorwegen-ns-logo.png" alt="Home"></a>
 	<h1>NS reisverhalen</h1>
-		<form action="index.html">
+		<form action="login.html">
 			<input type="search" placeholder=" zoeken"name="search">
 			<button><img src="img/search-512.png"></button>
+
 		</form>
 			<a href="login.html"><img src="img/account-icon.png" alt="Home"></a>
+                	<div><img src="img/hearth-ani.gif" alt="aantal gezien"></div>
+    
 </header>
-<button>
-		JS
-	</button>
-	<div>Look at it working</div>
+<section>
 
-	<nav>
-		<ul>
-			<li><a href="">Nieuw</a></li>
-			<li><a href="">Aanbevolen</a></li>	
-		</ul>
-	</nav>
+	
+	<aside>
+		<h2>(43) Nico Dijkshoorn die Mart Smeets imiteert</h2>
+		<p> De bus stopt voor Centraal, z'n zoon slaapt in z'n armen. De regen plenst hem nat, de wind jankt langs zijn oor. 	Een drilboor drilt, een heipaal ...</p>
+		<button>Lees Nu</button>
+		<button>Meer opties</button>
+	</aside>
+</section>
+
 
 <section>
-	<article>
-			<img src="img/3. Droom.png">
-		<h2>(43) Nico Dijkshoorn die Mart Smeets imiteert</h2>
-		<h3>28 jun. 2011</h3>
-		<p>Noot vooraf: de heer Nico Dijkshoorn hecht eraan te melden dat hij ...</p>
-		<section>
-			<span><img src="img/eye-24.png" alt="aantal gezien">45</span>
-			<span><img src="img/hearth-pink.png" alt="Vind-ik-leuk">12</span>
-			<img src="img/savedrive.png" alt="Bewaar verhaal">
-		</section>
-	</article>
-	
+	<form>
+            <fieldset>
+
+                <legend>FILTER</legend>
+                <ul>
+                    <li><input type="checkbox" id="genre1"><label for="genre1">Actie</label></li>
+                    <li><input type="checkbox" id="genre2"><label for="genre2">Avontuur</label></li>
+                    <li><input type="checkbox" id="genre3"><label for="genre3">Drama</label></li>
+                    <li><input type="checkbox" id="genre4"><label for="genre4">Fantasy</label></li>
+                    <li><input type="checkbox" id="genre5"><label for="genre5">SciFi</label></li>
+                    <li><input type="checkbox" id="genre6"><label for="genre6">Comedy</label></li>
+                </ul>
+                <ul>
+                    <li><input type="checkbox" id="0m"><label for="0m">0-15 min</label></li>
+                    <li><input type="checkbox" id="15m"><label for="15m">15-30 min</label></li>
+                    <li><input type="checkbox" id="30m"><label for="30m">30+</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>SORTEER</legend>
+                <select name="sort">
+                    <option value="popularity">Populariteit</option>
+                    <option value="new">Tijd nieuw</option>
+                    <option value="old">Tijd oud</option>
+                </select>
+
+            </fieldset>
+    </form>
+    
+	<main>
 	<article>
 		<img src="img/Hvers1-16.jpg">
 		<h2>(42) Heroïsch vers</h2>
 			<h3>28 jun. 2011</h3>
 		<p> De bus stopt voor Centraal, z'n zoon slaapt in z'n armen. De regen plenst hem nat, de wind jankt langs zijn oor. Een drilboor drilt, een heipaal ...</p>
 	
-		<section>
+		<footer>
 			<span><img src="img/eye-24.png" alt="aantal gezien">45</span>
 			<span><img src="img/hearth-pink.png" alt="Vind-ik-leuk">12</span>
 			<img src="img/savedrive.png" alt="Bewaar verhaal">
 		
-		</section>
+		</footer>
 		
 	</article>
 
@@ -64,18 +85,23 @@
 			<h3>28 jun. 2011</h3>
 		<p> Op het toneel staat een paal met bovenop een rond bord waarop we BUSSTOP lezen. Achter het bord hangt een groot wit doek, ...</p>
 
-		<section>
+		<footer>
 			<span><img src="img/eye-24.png" alt="aantal gezien">45</span>
 			<span><img src="img/hearth-pink.png" alt="Vind-ik-leuk">12</span>
 			<img src="img/savedrive.png" alt="Bewaar verhaal">
-		</section>
+		</footer>
 	</article>
 
-	<article>
-		<img src="img/verhaal10.jpg">
-		<a href=""><h2> content 3</h2></a>
-		<a href=""><h2> content</h2></a>
-		<p>content is created by content-creators</p>
+		<article>
+			<img src="img/3. Droom.png">
+		<h2>(43) Nico Dijkshoorn die Mart Smeets imiteert</h2>
+		<h3>28 jun. 2011</h3>
+		<p>Noot vooraf: de heer Nico Dijkshoorn hecht eraan te melden dat hij ...</p>
+		<footer>
+			<span><img src="img/eye-24.png" alt="aantal gezien">45</span>
+			<span><img src="img/hearth-pink.png" alt="Vind-ik-leuk">12</span>
+			<img src="img/savedrive.png" alt="Bewaar verhaal">
+		</footer>
 	</article>
 
 	<article>
@@ -91,11 +117,10 @@
 		<a href=""><h2> content</h2></a>
 		<p>content is created by content-creators</p>
 	</article>
-
+</main>
 </section>
 <footer>
 	  <script src="script.js"></script>
 </footer>
 
 
-</html>
